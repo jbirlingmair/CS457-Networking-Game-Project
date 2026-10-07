@@ -9,7 +9,8 @@ flowchart TD
     E -->|GAME_START| F[Server waits for ship placements]
     E -->|DISCONNECT| B
     F -->|PLACE_SHIP| G[Board updated]
-    G -->|PLACE_SHIP| G 
+    G -->|PLACE_SHIP| G
+    G -->|ERROR| G
     G -->|SHIPS_PLACED| H[Wait for guesses]
     H -->|PLAYER_TURN| I[Hit or miss]
     I -->|TURN_RESULT| H
