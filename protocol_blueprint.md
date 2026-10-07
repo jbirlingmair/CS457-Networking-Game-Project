@@ -6,11 +6,11 @@
 # Application Messages
 | Message Type | Direction | Purpose & Description |
 | --- | --- | --- |
-| `CONNECT` | Client -> Server | Client requests to connect to server with match ID/password |
-| `CONN_WAIT` | Server -> Client | Server tells client that the server is waiting for the other player to connect |
+| `CONNECT` | Client -> Server | Client requests to connect to server with match ID/password. |
+| `CONN_WAIT` | Server -> Client | Server tells client that the server is waiting for the other player to connect. |
 | `CONN_CONFIRM` | Server -> Client | Server tells client that the server has received another player, and that it needs a number between 1 and 10 to tell who goes first. |
-| `PLAYER_NUMBER ` | Client -> Server | Client tells server which number the player guessed |
-| `GAME_START` | Server -> Client | The server informs the client of the initial game state and who goes first |
+| `PLAYER_NUMBER ` | Client -> Server | Client tells server which number the player guessed. |
+| `GAME_START` | Server -> Client | The server informs the client of the initial game state and who goes first. |
 | `PLACE_SHIP` | Client -> Server | The client tells the server the coordinates and orientation, and which ship, the player has placed. |
 | `SHIPS_PLACED` | Server -> Client | The server tells the client that all ships for both players have been placed and the game will begin. |
 | `PLAYER_TURN` | Client -> Server | The client tells the server which coordinate they are guessing to strike. |
