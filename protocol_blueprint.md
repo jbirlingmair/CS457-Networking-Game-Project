@@ -18,3 +18,15 @@
 | `ERROR` | Server -> Client | Server tells the client that there is an error, like bad guess, garbled message, or other error. |
 | `DISCONNECT` | Client -> Server | The clients informs the server of an intentional disconnect. |
 | `GAME_OVER` | Server -> Client | The server informs the client that the game is over, how many hits/misses they had, and who won. |
+
+# Concrete Message Example
+```json
+{
+  "packet_type": "CONNECT",
+  "player_id": "AAAAFFFF",
+  "contents": {
+    "match_id": 123456,
+  },
+  "timestamp": 1800000000 
+}
+```
