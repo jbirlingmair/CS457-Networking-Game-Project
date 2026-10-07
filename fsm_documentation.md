@@ -1,4 +1,4 @@
-flowchart TD
+```flowchart TD
     A[Server starts] -->|Server started and listening| B(Waiting for players)
     B -->|CONNECT| C[Wait for other player]
     C -->|DISCONNECT| B
@@ -18,3 +18,4 @@ flowchart TD
     DIS -->|No re CONNECT| J
     G-->|DISCONNECT| DIS
     H-->|DISCONNECT| DIS
+```
