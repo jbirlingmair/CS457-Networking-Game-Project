@@ -1,4 +1,5 @@
-```flowchart TD
+```mermaid
+flowchart TD
     A[Server starts] -->|Server started and listening| B(Waiting for players)
     B -->|CONNECT| C[Wait for other player]
     C -->|DISCONNECT| B
