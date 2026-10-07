@@ -1,7 +1,7 @@
 # Transport Layer & Packet Framing Mechanism
 - **Transport Protocol:** TCP
 - **Serialization Format:** Structured JSON
-- **Framing Rule Requirement:** Newline-Delimited JSON
+- **Framing Rule Requirement:** Newline-Delimited JSON. Every JSON object is UTF-8 encoded and terminated by a newline character \n (0x0A). The receiver accumulates incoming bytes into a stream buffer until a \n is encountered, extracts the complete line, and deserializes the JSON object.
 
 # Application Messages
 | Message Type | Direction | Purpose & Description |
