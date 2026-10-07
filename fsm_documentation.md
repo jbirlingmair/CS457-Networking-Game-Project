@@ -12,6 +12,7 @@
     G -->|SHIPS_PLACED| H[Wait for guesses]
     H -->|PLAYER_TURN| I[Hit or miss]
     I -->|TURN_RESULT| H
+    I -->|ERROR| H
     H -->|GAME_OVER| J[Game is over]
     J --> B
     F -->|DISCONNECT| DIS[Disconnected]
