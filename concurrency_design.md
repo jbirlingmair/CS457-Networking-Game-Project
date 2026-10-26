@@ -1,2 +1,3 @@
 # Server Concurrency Model Selection
-I am going to select Non-Blocking I/O Multiplexing for my server. I believe this more sequential design fits the simpler facets and slow pace of Battleship.
+I am going to select Non-Blocking I/O Multiplexing for my server. I believe this more sequential design fits the simpler facets and slow pace of Battleship. It is not necessarily a real-time application; each turn must wait for the sometimes seconds long reaction and deliberation time of humans.
+My server will have two selectors, one for each client. The server will only be able to handle a maximum of two clients at a time. Each client's socket will exist in a series of loops depending on the game state, i.e. depending whether the server is waiting for one or more clients to connect, for the Who Goes First dance, for the Ship Placing section, and finally the gameplay section where the two players actually compete against each other.
