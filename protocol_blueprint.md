@@ -12,6 +12,7 @@
 | `PLAYER_NUMBER ` | Client -> Server | Client tells server which number the player guessed. |
 | `GAME_START` | Server -> Client | The server informs the client of the initial game state and who goes first. |
 | `PLACE_SHIP` | Client -> Server | The client tells the server the coordinates and orientation, and which ship, the player has placed. |
+| `PLACE_ACCEPTED` | Server -> Client | The server confirms that a ship placement is valid and reports the player's remaining ships. |
 | `SHIPS_PLACED` | Server -> Client | The server tells the client that all ships for both players have been placed and the game will begin. |
 | `PLAYER_TURN` | Client -> Server | The client tells the server which coordinate they are guessing to strike. |
 | `TURN_RESULT` | Server -> Client | The server tells the client whether the previously guessed coordinate is a hit or a miss. |
